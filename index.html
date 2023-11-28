@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>mode:lina</title>
+        <link rel="icon" href="./assets/images/icon/favicon-16x16.png" />
+        <link rel="icon" href="./assets/images/icon/favicon-32x32.png" />
+        <link rel="icon" href="./assets/images/icon/favicon-96x96.png" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="./assets/js/main.js" defer></script>
+        <script src="./assets/js/common.js" defer></script>
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <nav class="nav">
+                    <div class="logo">
+                        <a href="" class="link-home">
+                            <span class="blind">로고</span>
+                            <svg class="is-long on" viewBox="0 0 123 20">
+                                <path
+                                    d="M0 5.34869H4.63545V7.29913H4.69121C5.11779 6.58339 5.7287 5.98904 6.46327 5.57509C7.19785 5.16115 8.03055 4.94202 8.87868 4.93945C10.7052 4.93945 12.3394 5.51389 13.1219 7.24281C14.2755 5.74103 15.7059 4.93945 17.6728 4.93945C22.3101 4.93945 22.8158 8.36727 22.8158 11.0855V19.5894H18.0381V11.2188C18.0381 9.68509 17.2806 8.77839 16.0424 8.77839C13.9929 8.77839 13.7948 10.3177 13.7948 12.6192V19.5894H9.01904V11.4872C9.01904 9.81462 8.51339 8.77088 7.22138 8.77088C5.5064 8.77088 4.77772 9.73014 4.77772 12.6398V19.5856H0V5.34869Z"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M30.2006 4.93945C25.6767 4.93945 22.5312 8.20208 22.5312 12.4822C22.5312 16.7622 25.6767 19.9911 30.2006 19.9911C34.7245 19.9911 37.8911 16.7547 37.8911 12.4822C37.8911 8.20959 34.7245 4.93945 30.2006 4.93945ZM30.2006 16.4337C27.98 16.4337 27.3051 14.2918 27.3051 12.4915C27.3051 10.6913 27.98 8.5137 30.2006 8.5137C32.4212 8.5137 33.1211 10.68 33.1211 12.4915C33.1211 14.3031 32.4212 16.4337 30.2025 16.4337H30.2006Z"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M52.6914 19.5889H48.1405V17.9407H48.0848C47.6508 18.5907 47.0538 19.1217 46.3505 19.4831C45.6472 19.8445 44.861 20.0244 44.0665 20.0056C39.4887 20.0056 37.5469 16.1667 37.5469 12.1588C37.5469 8.45692 39.5695 4.9465 43.6993 4.9465C45.4989 4.9465 46.8735 5.60165 47.856 6.89506H47.9137V0H52.6895L52.6914 19.5889ZM42.3246 12.3184C42.3246 14.2669 43.0552 16.4333 45.247 16.4333C47.5772 16.4333 48.0848 14.2669 48.0848 12.4535C48.0848 10.3886 47.3254 8.51136 45.247 8.51136C43.0552 8.51136 42.3246 10.5144 42.3246 12.324"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M57.2465 13.6066C57.3291 15.5552 58.4827 16.8448 60.5053 16.8448C61.6589 16.8448 62.7798 16.323 63.2316 15.2811H67.6979C66.8269 18.5738 63.7084 19.9986 60.4476 19.9986C55.7026 19.9986 52.4688 17.2034 52.4688 12.4258C52.4688 8.06504 56.0391 4.93945 60.3361 4.93945C65.5618 4.93945 68.1766 8.77839 67.9517 13.6066H57.2465ZM63.1701 11.001C63.0855 9.41101 61.9377 8.0932 60.3323 8.0932C58.6481 8.0932 57.5253 9.27398 57.2426 11.001H63.1701Z"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M79.8852 0H75.1094V19.5889H79.8852V0Z"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M85.7933 3.56478H81.0156V-0.00195312H85.7933V3.56478ZM81.0156 5.35003H85.7933V19.5888H81.0156V5.35003Z"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M86.9219 5.34869H91.5573V7.29913H91.6131C92.484 5.8424 94.449 4.93945 96.1947 4.93945C101.053 4.93945 101.447 8.39731 101.447 10.4548V19.5894H96.6677V12.7018C96.6677 10.7551 96.8965 8.77839 94.2817 8.77839C92.484 8.77839 91.6977 10.2614 91.6977 11.8251V19.5894H86.9219V5.34869Z"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M102.666 9.73765C102.751 7.87356 103.651 6.66651 104.943 5.92688C106.235 5.18725 107.921 4.93945 109.58 4.93945C113.041 4.93945 116.379 5.68096 116.379 9.71137V15.94C116.379 17.1471 116.379 18.463 116.942 19.5894H112.135C111.987 19.1533 111.892 18.7014 111.855 18.2434C110.62 19.5068 108.794 20.0005 107.048 20.0005C104.266 20.0005 102.078 18.6282 102.078 15.6922C102.078 11.0555 107.244 11.4121 110.563 10.7551C111.376 10.5899 111.824 10.3158 111.824 9.44105C111.824 8.37291 110.505 7.96179 109.517 7.96179C108.196 7.96179 107.356 8.53435 107.129 9.74141L102.666 9.73765ZM108.852 17.1189C111.126 17.1189 111.885 15.8593 111.772 12.9214C111.099 13.3344 109.861 13.4151 108.821 13.6911C107.756 13.937 106.854 14.3744 106.854 15.5007C106.854 16.6271 107.784 17.1189 108.852 17.1189Z"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M74.2165 7.76249C74.2165 9.8969 71.223 12.2453 71.223 12.2453C71.223 12.2453 68.2275 9.7486 68.2275 7.76249C68.2174 7.3723 68.2874 6.98407 68.4333 6.6207C68.5792 6.25732 68.7982 5.92613 69.0772 5.64667C69.3563 5.3672 69.6898 5.1451 70.0582 4.99345C70.4265 4.8418 70.8223 4.76367 71.222 4.76367C71.6218 4.76367 72.0175 4.8418 72.3858 4.99345C72.7542 5.1451 73.0877 5.3672 73.3668 5.64667C73.6458 5.92613 73.8648 6.25732 74.0107 6.6207C74.1567 6.98407 74.2266 7.3723 74.2165 7.76249Z"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M68.2266 16.7424C68.2266 14.6005 71.222 12.2559 71.222 12.2559C71.222 12.2559 74.2155 14.7507 74.2155 16.7424C74.1957 17.505 73.8716 18.2299 73.3122 18.7625C72.7527 19.295 72.0024 19.5931 71.221 19.5931C70.4397 19.5931 69.6894 19.295 69.1299 18.7625C68.5705 18.2299 68.2464 17.505 68.2266 16.7424Z"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M120.015 5.29102V5.76595H119.193V7.97545H118.616V5.7622H117.789V5.29102H120.015Z"
+                                    fill="white"
+                                ></path>
+                                <path
+                                    d="M122.176 5.29102H123.003V7.97545H122.468V6.16017C122.468 6.10761 122.468 6.0344 122.468 5.94054C122.468 5.84668 122.468 5.77346 122.468 5.72278L121.947 7.97545H121.388L120.87 5.72278C120.87 5.77346 120.87 5.84668 120.87 5.94054C120.87 6.0344 120.87 6.10761 120.87 6.16017V7.97545H120.336V5.29102H121.172L121.672 7.40102L122.176 5.29102Z"
+                                    fill="white"
+                                ></path>
+                            </svg>
+
+                            <svg class="is-short" viewBox="0 0 238 106">
+                                <mask
+                                    id="mask0_719_317"
+                                    style="mask-type: luminance"
+                                    maskUnits="userSpaceOnUse"
+                                    x="0"
+                                    y="25"
+                                    width="238"
+                                    height="81"
+                                >
+                                    <path
+                                        d="M237.68 25H0V105.78H237.68V25Z"
+                                        fill="white"
+                                    ></path>
+                                </mask>
+                                <g mask="url(#mask0_719_317)">
+                                    <path
+                                        d="M0 27.7308H24.11V38.1208H24.4C26.6187 34.308 29.7962 31.1419 33.6169 28.9368C37.4376 26.7318 41.7687 25.5645 46.18 25.5508C55.68 25.5508 64.18 28.6108 68.25 37.8208C74.25 29.8208 81.69 25.5508 91.92 25.5508C116.04 25.5508 118.67 43.8108 118.67 58.2908V103.591H93.82V59.0008C93.82 50.8308 89.88 46.0008 83.44 46.0008C72.78 46.0008 71.75 54.2008 71.75 66.4608V103.591H46.91V60.4308C46.91 51.5208 44.28 45.9608 37.56 45.9608C28.64 45.9608 24.85 51.0708 24.85 66.5708V103.571H0V27.7308Z"
+                                        fill="black"
+                                    ></path>
+                                    <path
+                                        d="M163.433 51.1108C163.873 41.1808 168.553 34.7508 175.273 30.8108C181.993 26.8708 190.763 25.5508 199.393 25.5508C217.393 25.5508 234.763 29.5008 234.763 50.9708V84.1508C234.763 90.5808 234.763 97.5908 237.693 103.591H212.693C211.91 101.271 211.42 98.8622 211.233 96.4208C204.803 103.151 195.303 105.781 186.233 105.781C171.763 105.781 160.383 98.4708 160.383 82.8308C160.383 58.1308 187.263 60.0308 204.513 56.5308C208.743 55.6508 211.083 54.1908 211.083 49.5308C211.083 43.8408 204.223 41.6508 199.083 41.6508C192.223 41.6508 187.843 44.7008 186.663 51.1308L163.433 51.1108ZM195.563 90.4308C207.393 90.4308 211.343 83.7208 210.753 68.0708C207.263 70.2708 200.813 70.7008 195.403 72.1708C189.863 73.4808 185.183 75.8108 185.183 81.8108C185.183 87.8108 190.053 90.4308 195.563 90.4308Z"
+                                        fill="black"
+                                    ></path>
+                                    <path
+                                        d="M155.629 40.5898C155.629 51.9598 140.049 64.4698 140.049 64.4698C140.049 64.4698 124.469 51.1698 124.469 40.5898C124.469 36.4577 126.11 32.4949 129.032 29.573C131.954 26.6512 135.917 25.0098 140.049 25.0098C144.181 25.0098 148.144 26.6512 151.065 29.573C153.987 32.4949 155.629 36.4577 155.629 40.5898Z"
+                                        fill="black"
+                                    ></path>
+                                    <path
+                                        d="M124.469 88.4293C124.469 77.0193 140.049 64.5293 140.049 64.5293C140.049 64.5293 155.629 77.8193 155.629 88.4293C155.629 92.5614 153.987 96.5242 151.065 99.446C148.144 102.368 144.181 104.009 140.049 104.009C135.917 104.009 131.954 102.368 129.032 99.446C126.11 96.5242 124.469 92.5614 124.469 88.4293Z"
+                                        fill="black"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="menu">
+                        <a href="" class="link-menu">
+                            Polski
+                            <span class="blind">메뉴</span>
+                        </a>
+                        <a href="" class="link-more">
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="main">
+                <section class="sc-main">
+                    <div class="main-bg">
+                        <video
+                            autoplay
+                            muted
+                            loop
+                            src="https://modelina-architekci.com/wp-content/uploads/2023/02/0FD62A4A-46B4-41EF-BBBE-15E1DDE415AD-online-video-cutter.com_.mp4"
+                        ></video>
+                    </div>
+
+                    <div class="text-box">
+                        <h1 class="title">
+                            <span>We design experiences.</span><br />
+                            <span>For humans.</span><br />
+                            <span>Through architecture.</span>
+                        </h1>
+                    </div>
+                </section>
+
+                <section class="sc-design">
+                    <div class="head-line">
+                        <h2>We are mode:lina</h2>
+                    </div>
+
+                    <div class="design-con">
+                        <div class="text-box">
+                            <div class="text-wrap">
+                                <h3 class="title">
+                                    We design office spaces for<br />
+                                    people to enjoy working
+                                </h3>
+                                <p class="desc">
+                                    Spaces with plenty of room for
+                                    co:llaboration, co:creation and
+                                    co:experience. Places designed so as to
+                                    answer your needs today and tomorrow.
+                                </p>
+
+                                <a href="" class="link-more">
+                                    <svg
+                                        width="9"
+                                        height="9"
+                                        viewBox="0 0 9 9"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M7.55005 6.52477L1.02527 0L0 1.02527L6.52477 7.55005H1.02525V9H9V1.02525H7.55005V6.52477Z"
+                                            fill="black"
+                                        ></path>
+                                    </svg>
+                                    <span>more</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <img
+                                src="./assets/images/content/design-img1.jpeg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="design-con">
+                        <div class="img-box">
+                            <img
+                                src="./assets/images/content/design-img2.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="text-box">
+                            <div class="text-wrap">
+                                <h3 class="title">
+                                    We design commercial spaces<br />
+                                    that people enjoy visiting
+                                </h3>
+                                <p class="desc">
+                                    We design retail spaces, showrooms,
+                                    restaurants, and flagships focused on
+                                    building and fostering brand-consumer
+                                    interaction. We help making the authentic,
+                                    in:depth and hands:on brand experience
+                                    simply possible.
+                                </p>
+
+                                <a href="" class="link-more">
+                                    <svg
+                                        width="9"
+                                        height="9"
+                                        viewBox="0 0 9 9"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M7.55005 6.52477L1.02527 0L0 1.02527L6.52477 7.55005H1.02525V9H9V1.02525H7.55005V6.52477Z"
+                                            fill="black"
+                                        ></path>
+                                    </svg>
+                                    <span>more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc-studio">
+                    <div class="text-box">
+                        <h3 class="title">
+                            We are an independent architecture and design studio
+                            based in Poland and collaborating worldwide.
+                        </h3>
+                    </div>
+
+                    <div class="studio-bg">
+                        <img
+                            src="./assets/images/content/studio-bg.png"
+                            alt=""
+                        />
+                    </div>
+                </section>
+
+                <section class="slide sc-experience">
+                    <div class="slide-wrap">
+                        <div class="text-box">
+                            <h3 class="title">
+                                With 10+ years of experience, tons of successful
+                                projects, and a team of talented people on
+                                board.
+                            </h3>
+                            <div class="btn-wrap">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="swiper exSwiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/exslide1.jpeg"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/exslide2.jpeg"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/exslide3.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/exslide4.jpeg"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/exslide5.jpeg"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/exslide6.jpeg"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/exslide7.jpeg"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/exslide8.jpeg"
+                                        alt=""
+                                    />
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc-num">
+                    <div class="title-box">
+                        <h2 class="title">Numbers</h2>
+                    </div>
+                    <div class="text-box">
+                        <p class="desc">
+                            <strong class="data">14</strong>
+                            years of experience
+                            <strong class="data">400</strong>
+                            <br />
+
+                            projects
+                            <strong class="data">9</strong>
+                            team members
+                            <strong class="data">45</strong>
+
+                            <br />
+
+                            awards
+                            <strong class="data">300</strong>press mentions
+
+                            <br />
+                            in <strong class="data">15</strong> countries
+                        </p>
+                    </div>
+                </section>
+
+                <section class="slide sc-believing">
+                    <div class="area">
+                        <div class="slide-wrap">
+                            <div class="text-box">
+                                <h3 class="title">
+                                    We design<br />believing in:
+                                </h3>
+                                <div class="btn-wrap">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="swiper beSwiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="swiper-text">
+                                            <p>
+                                                Empathy and focus on:
+                                                human-centric approach
+                                            </p>
+                                        </div>
+                                        <div class="img-box">
+                                            <img
+                                                src="./assets/images/content/beslide.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="swiper-text">
+                                            <p>
+                                                Thorough attention to
+                                                functionality and end-user
+                                                experience
+                                            </p>
+                                        </div>
+                                        <div class="img-box">
+                                            <img
+                                                src="./assets/images/content/beslide2.jpeg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="swiper-text">
+                                            <p>
+                                                The power of translating
+                                                concepts into coherent forms and
+                                                captivating details
+                                            </p>
+                                        </div>
+                                        <div class="img-box">
+                                            <img
+                                                src="./assets/images/content/beslide3.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc-press">
+                    <div class="left">
+                        <h2 class="title">The media likes <br />what we do.</h2>
+                    </div>
+                    <div class="right">
+                        <p class="desc">
+                            Global recognition of our work includes numerous
+                            press mentions.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="sc-banner">
+                    <div class="swiper bannerSwiper">
+                        <ul class="swiper-wrapper" dir="ltr">
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner1.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span> BOB #157 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner2.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span> Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner3.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span> DesignAlive 24 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner4.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span> TM Magazine </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner5.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span> DesignAlive 24 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner6.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span> Octogon #136 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner7.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner8.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner9.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span> TM Magazine </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner10.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span> TM Magazine </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner21.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span> TM Magazine </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner11.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner12.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner13.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner14.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner15.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner16.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner17.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner18.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner19.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner20.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper bannerSwiper" dir="rtl">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner21.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner20.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner19.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner18.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner17.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner16.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner15.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner14.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner13.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner12.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner11.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner10.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner9.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner8.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner7.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner6.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner5.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner4.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner3.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner2.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner1.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper bannerSwiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner2.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Modern Decoration #430 </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner4.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner6.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner8.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner10.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner12.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner14.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner16.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner18.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner20.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner1.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner3.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner6.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner9.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner11.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner13.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner15.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner17.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner19.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner21.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="color-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-poster">
+                                    <figure class="poster">
+                                        <img
+                                            src="./assets/images/content/banner20.jpg"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="back-bg">
+                                        <span>Octogon #136</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="slide sc-work">
+                    <div class="slide-wrap">
+                        <div class="text-box">
+                            <h3 class="title">
+                                The industry appreciates our work.
+                            </h3>
+                            <div class="btn-wrap">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="swiper workSwiper">
+                            <div class="swiper-text">
+                                <p class="desc">
+                                    So far we have been honoured with design and
+                                    architecture awards including:
+                                </p>
+                            </div>
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/work1.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/work2.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/work3.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/work4.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/work5.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/work6.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/work7.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/work8.jpeg"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/content/work9.png"
+                                        alt=""
+                                    />
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc-progress">
+                    <div class="progress-area">
+                        <div class="text-box">
+                            <h3 class="title">
+                                We see partners<br />
+                                in our clients.
+                            </h3>
+                            <p class="desc">
+                                We will guide you through the entire design
+                                journey in a few simple steps based on years of
+                                experience and proven in practice.
+                            </p>
+                        </div>
+                        <div class="slide-wrap">
+                            <div class="page">
+                                <div class="left-page">
+                                    <div class="investor">
+                                        <span>investor</span>
+                                    </div>
+                                    <div class="modelina">
+                                        <span>modelina</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="swiper progressSwiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="slide-text">
+                                            <h2 class="title">Briefing</h2>
+                                            <p class="desc">
+                                                You tell us all about your idea,
+                                                your needs and the end-user
+                                                expectations of the project. To
+                                                help you with that we prepare
+                                                moodboards and detailed
+                                                questionnaire. We can meet
+                                                either in person or fully
+                                                online.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="slide-text">
+                                            <h2 class="title">De-briefing</h2>
+                                            <p class="desc">
+                                                We listen, take notes, ask
+                                                questions and then perhaps even
+                                                some more questions. To know you
+                                                better we use storyboards and
+                                                Look & Feel collages.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="slide-text">
+                                            <h2 class="title">Concept</h2>
+                                            <p class="desc">
+                                                We prepare a concept that
+                                                answers your Brief.Ideas are
+                                                illustrated with Schemes, 2D
+                                                Spaceplans and 3D
+                                                Visualisations.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="slide-text">
+                                            <h2 class="title">Briefing</h2>
+                                            <p class="desc">
+                                                You tell us all about your idea,
+                                                your needs and the end-user
+                                                expectations of the project. To
+                                                help you with that we prepare
+                                                moodboards and detailed
+                                                questionnaire. We can meet
+                                                either in person or fully
+                                                online.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="slide-text">
+                                            <h2 class="title">
+                                                Concept feedback
+                                            </h2>
+                                            <p class="desc">
+                                                We either give each other a high
+                                                five and proceed to the
+                                                executive phase or discuss
+                                                details that still need some
+                                                revision.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="slide-text">
+                                            <h2 class="title">
+                                                Concept refinement
+                                            </h2>
+                                            <p class="desc">
+                                                While keeping the Concept both
+                                                aesthetically and functionally
+                                                coherent, we apply all your
+                                                wishes. If needed we will repeat
+                                                this step at least two times.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="slide-text">
+                                            <h2 class="title">
+                                                Final approval
+                                            </h2>
+                                            <p class="desc">
+                                                After intense work on the
+                                                Concept that fully responds to
+                                                your expectations now it’s time
+                                                to focus on Technical Drawings.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="slide-text">
+                                            <h2 class="title">
+                                                Executive projects
+                                            </h2>
+                                            <p class="desc">
+                                                We prepare well-detailed and
+                                                easy-to-read executive drawings,
+                                                covering all the necessary data
+                                                to build your Project.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="slide-text">
+                                            <h2 class="title">
+                                                Contractor selection
+                                            </h2>
+                                            <p class="desc">
+                                                You assemble your team of
+                                                contractors. If you don’t have
+                                                one, we bring in ours!
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="slide-text">
+                                            <h2 class="title">Supervision</h2>
+                                            <p class="desc">
+                                                We supervise your project making
+                                                sure everything goes as planned.
+                                                We can do it online within 24 h
+                                                or schedule a meeting at the
+                                                Construction Site.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc-clients">
+                    <div class="banner-wrap">
+                        <div class="text-box">
+                            <span class="name">We worked for:</span>
+                        </div>
+                        <div class="swiper clientSwiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_BE-480x480.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_bmw-480x480.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_cic-480x480.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_farutex-480x480.png"
+                                        alt=""
+                                    />
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_opera-480x480.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_zabka.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_concordia-480x480.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_farutex-480x480.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_flokk.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_inea-480x480.png"
+                                        alt=""
+                                    />
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_ing.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_opera-480x480.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_tm-480x480.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_vw.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_yes.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img
+                                        src="./assets/images/icon/ma_zabka.png"
+                                        alt=""
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="slide"></div>
+
+                    <div class="introduce">
+                        <p class="desc">
+                            Would you like us to take care of your project?
+                        </p>
+                        <a href="" class="link-intro">Let us know.</a>
+                    </div> -->
+                </section>
+
+                <section class="slide sc-testimonials">
+                    <div class="slide-wrap">
+                        <div class="text-box">
+                            <h3 class="title">
+                                We love our clients and they love us back.
+                            </h3>
+                            <div class="btn-wrap">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="swiper testSwiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="slide-con">
+                                        <div class="con-desc">
+                                            <p class="desc">
+                                                You take the best out of people
+                                                and reflect it in its entirety
+                                                in your projects.
+                                            </p>
+                                        </div>
+                                        <div class="con-logo">
+                                            <img
+                                                src="./assets/images/icon/flokk.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="con-author">
+                                            <span class="name">
+                                                Magda Borówiec<br />
+                                                Flokk
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="slide-con">
+                                        <div class="con-desc">
+                                            <p class="desc">
+                                                You take the best out of people
+                                                and reflect it in its entirety
+                                                in your projects.
+                                            </p>
+                                        </div>
+                                        <div class="con-logo">
+                                            <img
+                                                src="./assets/images/icon/Totalpl-logo.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="con-author">
+                                            <span class="name">
+                                                Magda Borówiec<br />
+                                                Flokk
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="slide-con">
+                                        <div class="con-desc">
+                                            <p class="desc">
+                                                You take the best out of people
+                                                and reflect it in its entirety
+                                                in your projects.
+                                            </p>
+                                        </div>
+                                        <div class="con-logo">
+                                            <img
+                                                src="./assets/images/icon/cic-health-logo-2.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="con-author">
+                                            <span class="name">
+                                                Magda Borówiec<br />
+                                                Flokk
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="slide-con">
+                                        <div class="con-desc">
+                                            <p class="desc">
+                                                You take the best out of people
+                                                and reflect it in its entirety
+                                                in your projects.
+                                            </p>
+                                        </div>
+                                        <div class="con-logo">
+                                            <img
+                                                src="./assets/images/icon/BE_logo.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="con-author">
+                                            <span class="name">
+                                                Magda Borówiec<br />
+                                                Flokk
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="slide-con">
+                                        <div class="con-desc">
+                                            <p class="desc">
+                                                You take the best out of people
+                                                and reflect it in its entirety
+                                                in your projects.
+                                            </p>
+                                        </div>
+                                        <div class="con-logo">
+                                            <img
+                                                src="./assets/images/icon/ma_marmite.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="con-author">
+                                            <span class="name">
+                                                Magda Borówiec<br />
+                                                Flokk
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc-entrust">
+                    <div class="text-box">
+                        <h2 class="title">
+                            Would you like us to take care of your project?
+                        </h2>
+                        <a href="" class="link-know">Let us know.</a>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer-wrap">
+                    <div class="left">
+                        <h2 class="title">Contact</h2>
+                    </div>
+
+                    <div class="right">
+                        <div class="right-top">
+                            <a href="" class="link-mail">
+                                hello@modelina-architekci.com
+                            </a>
+                            <a href="" class="link-tell">+48 61 223 12 12 </a>
+                        </div>
+
+                        <div class="right-bottom">
+                            <div class="address">
+                                <p class="title">Address</p>
+                                <address>
+                                    ul. Zwierzyniecka 28D/2<br />
+                                    60-814 Poznan, Poland
+                                </address>
+                            </div>
+                            <div class="follow">
+                                <p class="title">Follow us</p>
+                                <ul class="sns-list">
+                                    <li class="sns-item">
+                                        <a href="" class="link-facebook"
+                                            ><svg
+                                                width="9"
+                                                height="9"
+                                                viewBox="0 0 9 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M7.55005 6.52477L1.02527 0L0 1.02527L6.52477 7.55005H1.02525V9H9V1.02525H7.55005V6.52477Z"
+                                                    fill="black"
+                                                ></path></svg
+                                            >Facebook</a
+                                        >
+                                    </li>
+                                    <li class="sns-item">
+                                        <a href="" class="link-insta"
+                                            ><svg
+                                                width="9"
+                                                height="9"
+                                                viewBox="0 0 9 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M7.55005 6.52477L1.02527 0L0 1.02527L6.52477 7.55005H1.02525V9H9V1.02525H7.55005V6.52477Z"
+                                                    fill="black"
+                                                ></path></svg
+                                            >Instagram</a
+                                        >
+                                    </li>
+                                    <li class="sns-item">
+                                        <a href="" class="link-linkedin"
+                                            ><svg
+                                                width="9"
+                                                height="9"
+                                                viewBox="0 0 9 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M7.55005 6.52477L1.02527 0L0 1.02527L6.52477 7.55005H1.02525V9H9V1.02525H7.55005V6.52477Z"
+                                                    fill="black"
+                                                ></path></svg
+                                            >LinkedIn</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="bottom-wrap">
+                        <div class="copy">
+                            © 2023 mode:lina. All right reserved.
+                        </div>
+                        <div class="madeBy">
+                            <a href="" class="link-made"
+                                >made by Human Creative</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

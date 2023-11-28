@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Warstwa_1" data-name="Warstwa 1" viewBox="0 0 313.7 165.1">
+  <defs>
+    <style>.cls-1{fill:#fff;}.cls-1,.cls-3{fill-rule:evenodd;}.cls-2{mask:url(#mask);}</style>
+    <mask id="mask" x="0" y="35.5" width="116.3" height="129.6" maskUnits="userSpaceOnUse">
+      <g transform="translate(0 -4.25)">
+        <g id="mask-2">
+          <polygon id="path-1" class="cls-1" points="0.06 39.75 116.3 39.75 116.3 169.35 0.06 169.35 0.06 39.75"></polygon>
+        </g>
+      </g>
+    </mask>
+  </defs>
+  <g id="Group-3">
+    <g class="cls-2">
+      <path id="Fill-1" class="cls-3" d="M66.4,39.75c14.9,0,44.5,6.1,44.5,27.1v12.7H89.4v-6.8c0-8.8-13.9-12.7-23-12.7-24.2,0-42.3,18.1-42.3,44.2,0,28.1,20.5,44,43.5,44,23.2,0,38.4-17.1,38.4-17.1l10.3,16.9s-17.6,21.3-50.3,21.3c-38.9,0-66-27.6-66-64.8-.1-36.4,26.6-64.8,66.4-64.8" transform="translate(0 -4.25)"></path>
+    </g>
+  </g>
+  <path id="Fill-4" class="cls-3" d="M143.4,68.35c0-3.7-1.9-5.4-5.4-5.4H128V42.75h23.2c11,0,15.6,4.6,15.6,15.6v82.3c0,3.7,1.9,5.4,5.4,5.4h10v20.3H159c-11,0-15.6-4.6-15.6-15.6V68.35" transform="translate(0 -4.25)"></path>
+  <path id="Fill-5" class="cls-3" d="M263.8,39.75c14.9,0,44.5,6.1,44.5,27.1v12.7H286.8v-6.8c0-8.8-13.9-12.7-23-12.7-24.2,0-42.3,18.1-42.3,44.2,0,28.1,20.5,44,43.5,44,23.2,0,38.4-17.1,38.4-17.1l10.3,16.9s-17.6,21.3-50.3,21.3c-38.9,0-66-27.6-66-64.8,0-36.4,26.6-64.8,66.4-64.8" transform="translate(0 -4.25)"></path>
+  <path id="Fill-6" class="cls-3" d="M78.3,18.65a6.3,6.3,0,1,1,6.3-6.3,6.27,6.27,0,0,1-6.3,6.3" transform="translate(0 -4.25)"></path>
+  <path id="Fill-7" class="cls-3" d="M100.42,20.45a8.07,8.07,0,0,1-8-8,8.2,8.2,0,0,1,8-8.2h.18a8.1,8.1,0,0,1,0,16.2h-.18" transform="translate(0 -4.25)"></path>
+</svg>
