@@ -8,7 +8,11 @@ var swiper = new Swiper(".exSwiper", {
     },
 
     breakpoints: {
-        1024: { spaceBetween: 50 },
+        1024: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+        },
+
         768: {
             spaceBetween: 20,
         },
@@ -71,9 +75,9 @@ var swiper = new Swiper(".workSwiper", {
             slidesPerView: 1,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 4,
         },
-        1023: {
+        1024: {
             slidesPerView: "auto",
         },
         1200: {
