@@ -2239,6 +2239,7 @@ footer .footer-bottom .bottom-wrap .link-made {
 }
 .sc-banner .swiper-slide .link-poster {
   position: relative;
+  display: block;
 }
 .sc-banner .swiper-slide .link-poster:hover .back-bg {
   opacity: 1;
